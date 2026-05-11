@@ -3,11 +3,13 @@ class ChequingAccount extends BankAccount {
 	protected int pinNumber;
 	
 	public ChequingAccount(double money, int pinNumber) {
+		super(1, 2);
 		this.accountBalance = money;
 		this.pinNumber = pinNumber;
 	}
 	
 	public ChequingAccount(int pinNumber) { //default balance
+		super(1, 2);
 		this.accountBalance = 0;
 		this.pinNumber = pinNumber;
 	}
